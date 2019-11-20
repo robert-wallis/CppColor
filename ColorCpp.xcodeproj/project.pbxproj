@@ -34,6 +34,7 @@
 		E16535D02384FCC30090042E /* p8.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = p8.hpp; sourceTree = "<group>"; };
 		E16535D22385CDDD0090042E /* LineInFunction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LineInFunction.hpp; sourceTree = "<group>"; };
 		E16535D32385D58C0090042E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		E16535D52385DAF00090042E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +51,7 @@
 		E16535B92384A4AD0090042E = {
 			isa = PBXGroup;
 			children = (
+				E16535D52385DAF00090042E /* README.md */,
 				E16535D32385D58C0090042E /* Makefile */,
 				E16535C42384A4AD0090042E /* ColorCpp */,
 				E16535C32384A4AD0090042E /* Products */,
