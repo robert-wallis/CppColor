@@ -7,11 +7,17 @@
 //
 
 #include <iostream>
+
+#include "p8.hpp"
 #include "spans.hpp"
 
+int main(int argc, const char *argv[]) {
+  std::cout << "=== span ===" << std::endl;
+  span();
+  compile_time_span();
 
-int main(int argc, const char * argv[]) {
-    span();
-    compile_time_span();
-    return 0;
+  std::cout << "=== p8 ===" << std::endl;
+  p8_raii_file();
+
+  return 0;
 }
