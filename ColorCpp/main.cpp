@@ -7,9 +7,19 @@
 //
 
 #include <iostream>
+#include <span>
+
+
+void span() {
+    char text[] = "Woah Spans work!";
+    std::span<char> sp(text);
+    for (auto const &c : sp) {
+        std::cout << c;
+    }
+    std::cout << std::endl;
+}
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    span();
     return 0;
 }
