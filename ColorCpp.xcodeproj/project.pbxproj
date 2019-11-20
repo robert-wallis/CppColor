@@ -10,6 +10,7 @@
 		E16535C62384A4AD0090042E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16535C52384A4AD0090042E /* main.cpp */; };
 		E16535CE2384FBFB0090042E /* spans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16535CC2384FBFB0090042E /* spans.cpp */; };
 		E16535D12384FCC30090042E /* p8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16535CF2384FCC30090042E /* p8.cpp */; };
+		E16535D42385D58C0090042E /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = E16535D32385D58C0090042E /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 		E16535CF2384FCC30090042E /* p8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p8.cpp; sourceTree = "<group>"; };
 		E16535D02384FCC30090042E /* p8.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = p8.hpp; sourceTree = "<group>"; };
 		E16535D22385CDDD0090042E /* LineInFile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LineInFile.hpp; sourceTree = "<group>"; };
+		E16535D32385D58C0090042E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		E16535B92384A4AD0090042E = {
 			isa = PBXGroup;
 			children = (
+				E16535D32385D58C0090042E /* Makefile */,
 				E16535C42384A4AD0090042E /* ColorCpp */,
 				E16535C32384A4AD0090042E /* Products */,
 			);
@@ -133,6 +136,7 @@
 			files = (
 				E16535D12384FCC30090042E /* p8.cpp in Sources */,
 				E16535C62384A4AD0090042E /* main.cpp in Sources */,
+				E16535D42385D58C0090042E /* Makefile in Sources */,
 				E16535CE2384FBFB0090042E /* spans.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
