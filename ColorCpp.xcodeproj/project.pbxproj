@@ -32,7 +32,7 @@
 		E16535CD2384FBFB0090042E /* spans.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = spans.hpp; sourceTree = "<group>"; };
 		E16535CF2384FCC30090042E /* p8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p8.cpp; sourceTree = "<group>"; };
 		E16535D02384FCC30090042E /* p8.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = p8.hpp; sourceTree = "<group>"; };
-		E16535D22385CDDD0090042E /* LineInFile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LineInFile.hpp; sourceTree = "<group>"; };
+		E16535D22385CDDD0090042E /* LineInFunction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LineInFunction.hpp; sourceTree = "<group>"; };
 		E16535D32385D58C0090042E /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +72,7 @@
 				E16535CD2384FBFB0090042E /* spans.hpp */,
 				E16535CF2384FCC30090042E /* p8.cpp */,
 				E16535D02384FCC30090042E /* p8.hpp */,
-				E16535D22385CDDD0090042E /* LineInFile.hpp */,
+				E16535D22385CDDD0090042E /* LineInFunction.hpp */,
 			);
 			path = ColorCpp;
 			sourceTree = "<group>";
