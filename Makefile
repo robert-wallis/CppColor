@@ -11,7 +11,7 @@ format:
 	clang-format -style=google -i ${SOURCE_FILES}
 
 color: ${SOURCE_FILES}
-	clang++ -std=c++2a -Wall -o color ${CLASS_FILES}
+	${CXX} -std=c++2a -Wall -o color ${CLASS_FILES}
 
 clean:
 	rm color
