@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E16535C62384A4AD0090042E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16535C52384A4AD0090042E /* main.cpp */; };
 		E16535CE2384FBFB0090042E /* spans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16535CC2384FBFB0090042E /* spans.cpp */; };
+		E16535D12384FCC30090042E /* p8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16535CF2384FCC30090042E /* p8.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,9 @@
 		E16535C52384A4AD0090042E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E16535CC2384FBFB0090042E /* spans.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = spans.cpp; sourceTree = "<group>"; };
 		E16535CD2384FBFB0090042E /* spans.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = spans.hpp; sourceTree = "<group>"; };
+		E16535CF2384FCC30090042E /* p8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = p8.cpp; sourceTree = "<group>"; };
+		E16535D02384FCC30090042E /* p8.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = p8.hpp; sourceTree = "<group>"; };
+		E16535D22385CDDD0090042E /* LineInFile.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LineInFile.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,9 @@
 				E16535C52384A4AD0090042E /* main.cpp */,
 				E16535CC2384FBFB0090042E /* spans.cpp */,
 				E16535CD2384FBFB0090042E /* spans.hpp */,
+				E16535CF2384FCC30090042E /* p8.cpp */,
+				E16535D02384FCC30090042E /* p8.hpp */,
+				E16535D22385CDDD0090042E /* LineInFile.hpp */,
 			);
 			path = ColorCpp;
 			sourceTree = "<group>";
@@ -124,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16535D12384FCC30090042E /* p8.cpp in Sources */,
 				E16535C62384A4AD0090042E /* main.cpp in Sources */,
 				E16535CE2384FBFB0090042E /* spans.cpp in Sources */,
 			);
