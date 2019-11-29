@@ -10,6 +10,7 @@
 #define LineInFile_h
 
 #include <string>
+#include <utility>
 
 class LineInFunction {
   std::string function_name;
@@ -17,8 +18,8 @@ class LineInFunction {
   bool in_this_function;
 
  public:
-  LineInFunction(const std::string &function_name)
-      : function_name(function_name),
+  explicit LineInFunction(std::string function_name)
+      : function_name(std::move(function_name)),
         bracket_level(0),
         in_this_function(false) {}
 
@@ -38,7 +39,7 @@ class LineInFunction {
     return in_this_function;
   }
 
-  int static const bracket_count(const std::string &line) {
+  int static bracket_count(const std::string &line) {
     int count = 0;
     for (const auto &c : line) {
       if (c == '{') {
