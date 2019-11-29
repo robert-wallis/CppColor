@@ -10,12 +10,15 @@
 #include <iostream>
 
 void span() {
-  char text[] = "Woah Spans work!";
-  std::span<char> sp(text);
+  int numbers[] = {4, 8, 15, 16, 23, 42};
+  std::span<int> sp(numbers);
+  int count = 0;
   for (auto const &c : sp) {
-    std::cout << c;
+    std::cout << c << ", ";
+    count++;
   }
   std::cout << std::endl;
+  std::cout << count << " numbers printed" << std::endl;
 }
 
 int sum(std::span<int> list) {
@@ -27,7 +30,7 @@ int sum(std::span<int> list) {
 }
 
 void compile_time_span() {
-  int list[3] = {1, 2, 3};
+  int list[] = {1, 2, 3};
 
   int total = sum({list, 4});  // should compile time error, 4 > 3 :(
   std::cout << total << std::endl;
