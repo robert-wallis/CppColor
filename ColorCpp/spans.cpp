@@ -7,6 +7,7 @@
 //
 
 #include "spans.hpp"
+#include <iostream>
 
 void span() {
   char text[] = "Woah Spans work!";

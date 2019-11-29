@@ -9,7 +9,6 @@
 #ifndef spans_hpp
 #define spans_hpp
 
-#include <iostream>
 #include <span>
 
 void span();
