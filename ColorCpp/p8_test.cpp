@@ -6,14 +6,14 @@
 //  Copyright © 2019 Robert Wallis. All rights reserved.
 //
 
-#include "p8.hpp"
 
 #include <fstream>
 #include <iostream>
+#include "gtest/gtest.h"
 
 #include "LineInFunction.hpp"
 
-void p8_raii_file() {
+TEST(P8, RaiiFile) {
   std::ifstream file{__FILE__};
   std::string line;
   auto in_func = LineInFunction(__FUNCTION__);
@@ -24,5 +24,3 @@ void p8_raii_file() {
     }
   }
 }
-
-void other_func() {}

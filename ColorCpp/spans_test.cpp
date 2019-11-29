@@ -2,23 +2,24 @@
 //  spans.cpp
 //  ColorCpp
 //
-//  Created by Robert Wallis on 11/19/19.
+//  Created by Robert Wallis on 11/29/19.
 //  Copyright © 2019 Robert Wallis. All rights reserved.
 //
 
-#include "spans.hpp"
-#include <iostream>
+#include <span>
+#include "gtest/gtest.h"
 
-void span() {
+TEST(CppSpan, Basic) {
   int numbers[] = {4, 8, 15, 16, 23, 42};
   std::span<int> sp(numbers);
   int count = 0;
+  int sum = 0;
   for (auto const &c : sp) {
-    std::cout << c << ", ";
+    sum += c;
     count++;
   }
-  std::cout << std::endl;
-  std::cout << count << " numbers printed" << std::endl;
+  EXPECT_EQ(6, count);
+  EXPECT_EQ(108, sum);
 }
 
 int sum(std::span<int> list) {
@@ -29,12 +30,13 @@ int sum(std::span<int> list) {
   return total;
 }
 
-void compile_time_span() {
+TEST(CppSpan, SumNormalSpan) {
   int list[] = {1, 2, 3};
+  EXPECT_EQ(6, sum(list));
+}
 
+TEST(CppSpan, OverBoundsShouldWarnOrError) {
+  int list[] = {1, 2, 3};
   int total = sum({list, 4});  // should compile time error, 4 > 3 :(
-  std::cout << total << std::endl;
-
-  int total2 = sum(list);
-  std::cout << total2 << std::endl;
+  EXPECT_NE(0, total);
 }
