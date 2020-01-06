@@ -11,7 +11,8 @@ include_directories(${gtest_SOURCE_DIR})
 add_executable(ColorTest
         ColorCpp/spans_test.cpp
         ColorCpp/p8_test.cpp
-        ColorCpp/transform_letter.cpp)
+        ColorCpp/transform_letter.cpp
+        ColorCpp/transform_reducer.cpp)
 target_link_libraries(ColorTest gtest gtest_main)
 
 enable_testing()
