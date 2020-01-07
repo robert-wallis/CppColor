@@ -2,7 +2,6 @@
 // Created by Robert Wallis on 1/5/20.
 //
 
-#include <string>
 #include <algorithm>
 #include "gtest/gtest.h"
 
@@ -13,7 +12,7 @@ char nextLetter(char c) {
 }
 
 std::string mover(std::string word) {
-  std::string moved("");
+  std::string moved;
   auto result = std::transform(
       word.begin(),
       word.end(),
