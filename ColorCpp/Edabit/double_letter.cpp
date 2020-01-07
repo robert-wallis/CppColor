@@ -2,8 +2,8 @@
 // Created by Robert Wallis on 1/6/20.
 //
 
-#import <algorithm>
-#import "gtest/gtest.h"
+#include <algorithm>
+#include "gtest/gtest.h"
 
 std::string doubleChar(std::string str) {
   std::string acc;
