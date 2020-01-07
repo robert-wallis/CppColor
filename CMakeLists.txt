@@ -13,7 +13,8 @@ add_executable(ColorTest
         ColorCpp/p8_test.cpp
         ColorCpp/transform_letter.cpp
         ColorCpp/transform_reducer.cpp
-        ColorCpp/double_letter.cpp)
+        ColorCpp/double_letter.cpp
+        ColorCpp/automorphic_numbers.cpp)
 target_link_libraries(ColorTest gtest gtest_main)
 
 enable_testing()
