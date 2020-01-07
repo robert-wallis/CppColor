@@ -12,7 +12,8 @@ add_executable(ColorTest
         ColorCpp/spans_test.cpp
         ColorCpp/p8_test.cpp
         ColorCpp/transform_letter.cpp
-        ColorCpp/transform_reducer.cpp)
+        ColorCpp/transform_reducer.cpp
+        ColorCpp/double_letter.cpp)
 target_link_libraries(ColorTest gtest gtest_main)
 
 enable_testing()
