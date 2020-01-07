@@ -26,14 +26,14 @@ int getAbsSum(std::vector<int> arr) {
   );
 }
 
-TEST(Transform, TransformReducer) {
+TEST(Edabit, TransformReducer) {
   EXPECT_EQ(1, trGetAbsSum(std::vector({-1})));
   EXPECT_EQ(30, trGetAbsSum(std::vector({2, 4, 6, 8, 10})));
   EXPECT_EQ(22, trGetAbsSum(std::vector({-3, -4, -10, -2, -3})));
   EXPECT_EQ(25, trGetAbsSum(std::vector({2, -1, 4, 8, 10})));
 }
 
-TEST(Transform, Accumulate) {
+TEST(Edabit, Accumulate) {
   EXPECT_EQ(1, getAbsSum(std::vector({-1})));
   EXPECT_EQ(30, getAbsSum(std::vector({2, 4, 6, 8, 10})));
   EXPECT_EQ(22, getAbsSum(std::vector({-3, -4, -10, -2, -3})));

@@ -23,7 +23,7 @@ std::string mover(std::string word) {
   return moved;
 }
 
-TEST(Transform, Letter) {
+TEST(Edabit, TransformLetter) {
   EXPECT_EQ("bcde", mover("abcd"));
   EXPECT_EQ("ifmmp", mover("hello"));
   EXPECT_EQ("czf", mover("bye"));
