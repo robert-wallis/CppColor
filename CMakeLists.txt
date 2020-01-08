@@ -7,7 +7,10 @@ add_subdirectory("libs/googletest")
 include(GoogleTest)
 include_directories(${gtest_SOURCE_DIR})
 
-add_executable(ColorTest)
+add_executable(ColorTest
+        ColorCpp/copies.cpp
+        )
+set_property(TARGET ColorTest PROPERTY CXX_STANDARD 17)
 
 add_library(Edabit OBJECT
     ColorCpp/Edabit/transform_letter.cpp
