@@ -18,17 +18,17 @@ add_library(Edabit OBJECT
 target_link_libraries(Edabit gtest)
 set_property(TARGET Edabit PROPERTY CXX_STANDARD 17)
 
-if(!WIN32)
+if(WIN32)
+    target_link_libraries(ColorTest gtest gtest_main Edabit)
+else()
     add_library(Cpp20 OBJECT
-        ColorCpp/Cpp20/spans_test.cpp
-        ColorCpp/Cpp20/p8_test.cpp
-    )
+            ColorCpp/Cpp20/spans_test.cpp
+            ColorCpp/Cpp20/p8_test.cpp
+            )
     target_link_libraries(Cpp20 gtest)
     set_property(TARGET Cpp20 PROPERTY CXX_STANDARD 20)
 
     target_link_libraries(ColorTest gtest gtest_main Edabit Cpp20)
-else()
-    target_link_libraries(ColorTest gtest gtest_main Edabit)
 endif()
 
 
